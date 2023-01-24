@@ -39,6 +39,7 @@ dependencies:
   get: ^4.6.5
   postgres: ^2.5.2
   animated_bottom_navigation_bar: ^1.1.0+1
+  flutter_picker: ^2.0.5
 
 dev_dependencies:
   flutter_test:

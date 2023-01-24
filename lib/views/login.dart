@@ -4,8 +4,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:get/get.dart';
 import 'package:postgres/postgres.dart';
 import 'package:postgres/postgres.dart';
-import 'package:veritabani_projesi/views/order_information_page.dart';
-import 'package:veritabani_projesi/views/query_page.dart';
+import 'package:veritabani_projesi/views/order.dart';
+import 'package:veritabani_projesi/views/sql_query.dart';
 
 import '../view_models/controller.dart';
 import '/database/databaseconnect.dart';
@@ -45,9 +45,15 @@ class _LoginState extends State<Login> {
         SizedBox(
           height: 10,
         ),
-        Text("Zeytinyagi firmasiyla ilgili aciklamalar"),
+        Container(
+          margin: EdgeInsets.all(30),
+          child: Text(
+            "Siparis Eklemek icin Siparis islemleri butonuna \n\nSorgulama yapmak icin Sorgula butonuna basiniz",
+            style: TextStyle(fontSize: 25),
+          ),
+        ),
         SizedBox(
-          height: 350,
+          height: 200,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
